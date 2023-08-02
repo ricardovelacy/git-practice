@@ -39,7 +39,7 @@ const print = function(text, item) {
 const average = function (arr) {
     let result = sum(arr);
        let avg = result / arr.length;
-    console.log('La media es: ' + avg);
+   print('La media es: ', avg);
 }
 
 
