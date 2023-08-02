@@ -25,11 +25,9 @@ process.stdin.on('end', () => {
 
 // Función para sumar todos los elementos del array
 const sum = function (arr) {
-    let result = 0;
-    for (let i = 0; i < arr.length; i++) {
-        result += arr[i];
-    }
+    const result = arr.reduce((acum, item) => acum += item, 0);
     console.log('La suma es: ' + result);
+    return result;
 }
 
 
