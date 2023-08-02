@@ -41,12 +41,7 @@ const average = function (arr) {
 
 // Función para encontrar el número mayor del array
 const max = function (arr) {
-    let max = arr[0];
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
-        }
-    }
+    let max = arr.sort((a,b) => b - a)[0];
     console.log('El número mayor es: ' + max);
 }
 
