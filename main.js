@@ -30,6 +30,10 @@ const sum = function (arr) {
     return result;
 }
 
+const print = function(text, item) {
+  console.log(text + item.toString();
+}
+
 
 // Función para calcular la media del array
 const average = function (arr) {
@@ -41,12 +45,7 @@ const average = function (arr) {
 
 // Función para encontrar el número mayor del array
 const max = function (arr) {
-    let max = arr[0];
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
-        }
-    }
+    let max = Math.max(...arr);
     console.log('El número mayor es: ' + max);
 }
 
