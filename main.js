@@ -33,11 +33,8 @@ const sum = function (arr) {
 
 // Función para calcular la media del array
 const average = function (arr) {
-    let result = 0;
-    for (let i = 0; i < arr.length; i++) {
-        result += arr[i];
-    }
-    let avg = result / arr.length;
+    let result = sum(arr);
+       let avg = result / arr.length;
     console.log('La media es: ' + avg);
 }
 
