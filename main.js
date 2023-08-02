@@ -31,7 +31,7 @@ const sum = function (arr) {
 }
 
 const print = function(text, item) {
-  console.log(text + item.toString();
+  console.log(text + item.toString());
 }
 
 
