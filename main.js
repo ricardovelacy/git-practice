@@ -30,6 +30,10 @@ const sum = function (arr) {
     return result;
 }
 
+const print = function(text, item) {
+  console.log(text + item.toString();
+}
+
 
 // Función para calcular la media del array
 const average = function (arr) {
