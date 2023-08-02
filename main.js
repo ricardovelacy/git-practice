@@ -1,7 +1,30 @@
-const arr = [1, 2, 3, 4, 5];
+let size = 0;
+let arr = [];
+let counter = 0;
+process.stdin.on('data', (chunk) => {
+    const input = chunk.toString().trim(); // convertir datos a string sin espacios
+        if (!size) {
+            console.log("Ingrese la cantidad de elementos del array");
+            size = chunk;
+        } else if (counter < size){ // para acabar la ejecución
+            console.log("Ingrese un numero para añadir al array");
+            arr.push(Number(input));
+            counter++
+        }
+        if (counter == size) {
+            console.log("Oprima ctrl + d");
+        }
+})
+
+process.stdin.on('end', () => {
+    console.log('End of input. \n')
+    sum(arr);
+    average(arr);
+    max(arr);
+})
 
 // Función para sumar todos los elementos del array
-const sum = function(arr) {
+const sum = function (arr) {
     let result = 0;
     for (let i = 0; i < arr.length; i++) {
         result += arr[i];
@@ -9,10 +32,9 @@ const sum = function(arr) {
     console.log('La suma es: ' + result);
 }
 
-sum(arr);
 
 // Función para calcular la media del array
-const average = function(arr) {
+const average = function (arr) {
     let result = 0;
     for (let i = 0; i < arr.length; i++) {
         result += arr[i];
@@ -21,10 +43,9 @@ const average = function(arr) {
     console.log('La media es: ' + avg);
 }
 
-average(arr);
 
 // Función para encontrar el número mayor del array
-const max = function(arr) {
+const max = function (arr) {
     let max = arr[0];
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] > max) {
@@ -34,4 +55,3 @@ const max = function(arr) {
     console.log('El número mayor es: ' + max);
 }
 
-max(arr);
