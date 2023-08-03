@@ -28,11 +28,12 @@ const max = function (arr) {
 
 const main = function() {
     const ul = document.querySelector('ul');
-    const inputs = new Array(2);
-    inputs.map(item => document.createElement('li'));
-    inputs[0].textContent = "Soy músico 🎸";
-    inputs[1].textContent = "Y desarrollador 💻";
-    ul.append(...inputs);
+    const input = document.createElement('li')
+    const input1 = document.createElement('li')
+    input.textContent = "Soy músico 🎸";
+    input1.textContent = "Y desarrollador 💻";
+    console.log(input,input1)
+    ul.append(input, input1);
 }
 
 document.addEventListener('DOMContentLoaded', main);
