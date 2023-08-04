@@ -2,7 +2,7 @@ const arr = [1,2,3,5,4,1,2,3,6,4,5,2];
 
 // Función para sumar todos los elementos del array
 const sum = function (arr) {
-    const result = arr.reduce((acum, item) => acum += item, 0);
+    const result = arr.reduce((acumulador, item) => acumulador += item, 0);
     print("La suma es: ", result);
     return result;
 }
@@ -32,7 +32,6 @@ const main = function() {
     const input1 = document.createElement('li')
     input.textContent = "Soy músico 🎸";
     input1.textContent = "Y desarrollador 💻";
-    console.log(input,input1)
     ul.append(input, input1);
 }
 
