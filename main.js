@@ -32,7 +32,6 @@ const main = function() {
     const input1 = document.createElement('li')
     input.textContent = "Soy músico 🎸";
     input1.textContent = "Y desarrollador 💻";
-    console.log(input,input1)
     ul.append(input, input1);
 }
 
