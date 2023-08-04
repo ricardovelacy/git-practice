@@ -30,9 +30,13 @@ const main = function() {
     const ul = document.querySelector('ul');
     const input = document.createElement('li')
     const input1 = document.createElement('li')
+    const input2 = document.createElement('li')
     input.textContent = "Soy músico 🎸";
     input1.textContent = "Y desarrollador 💻";
-    ul.append(input, input1);
+    input2.textContent = "Y que rico un café ☕";
+    ul.appendChild(input);
+    ul.appendChild(input1);
+    ul.appendChild(input2);
 }
 
 document.addEventListener('DOMContentLoaded', main);
