@@ -1,4 +1,7 @@
-const arr = [1,2,3,5,4,1,2,3,6,4,5,2];
+const arr = new Array(20);
+arr.forEach(item => {
+    arr.push(Math.floor(Math.random*10));
+})
 
 // Función para sumar todos los elementos del array
 const sum = function (arr) {
