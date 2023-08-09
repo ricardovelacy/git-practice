@@ -7,13 +7,24 @@ body {
     padding: 0;
   }
   
+  #greeting {
+    background-color: turquoise;
+    color: black;
+    box-shadow: #656565;
+    width: 50%;
+    margin: auto;
+    border-radius: 1%;
+    border-color: black;
+    border: 2px solid black;
+    margin-top: 10px;
+  }
   h1 {
     color: #414141;
     text-align: center;
     margin-top: 2em;
   }
   
-  h2 {
+  h2, h3 {
     color: #656565;
     text-align: center;
     margin-bottom: 2em;
